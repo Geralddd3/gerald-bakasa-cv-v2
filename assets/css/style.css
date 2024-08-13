@@ -1,48 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    border: 0;
+margin: 0;
+padding: 0;
+border: 0;
 }
 body{
-    font-family: 'DM-Sans', 'Roboto';
-    color: #777777;
-}
-h1, h2, h3, h4{
-    font-family: 'Rubik';
+font-family: 'DM-Sans', 'Roboto';
+color: #000000;
+background-color:#edeced;
 }
 h2{
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #000000;
-
+font-family: Rubik;
+text-transform: uppercase;
+letter-spacing: 6px;
+color: #000000;
 }
 #name{
-    float: left;
-    font-size: 280%;
+float: left;
+font-size: 260%;
 }
 #menu{
-    font-size: 110%;
-    list-style-type: none;
-    letter-spacing: 4px;
+font-size: 110%;
+list-style-type: none;
+letter-spacing: 6px;
 }
 #name, #menu{
-    line-height: 75px;
+line-height: 75px;
 }
 #menu li{
-    float:right;
-    margin-right: 30px;
-
+float: right;
+margin-right: 30px;
 }
 #menu a{
-    text-decoration: none;
-    color:#777777;
-
+text-decoration: none;
+color: #000000;
 }
 #menu a:hover{
-    border-bottom: 1px solid #000000;
+border-bottom: 1px solid #000000;
 }
 .active{
-    border-bottom: 1px solid #000000;
+border-bottom: 1px solid #000000;
+}
+#hero-img{
+height: 600px;
+width: 100%;
+background: url("../img/background-img1.jpg") no-repeat center center;
+
+animation-name: hero-zoom;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+}
+#hero-outer{
+height: 600px;
+width: 100%;
+overflow: hidden;
+position: relative;
+}
+@keyframes hero-zoom{
+    from{
+transform: scale(1);
+    }
+    to{
+transform: scale(1.1);
+    }
+}
+#about-me{
+height: 600px;
+}
+#info{
+margin: 20px 0;
+text-align: center;
+}
+#left-about{
+padding-top: 30px;
+width: 33%;
+float: left;
+}
+#right-about{
+padding-top: 30px;
+width: 33%;
+float: right;
+}
+#center-about{
+width: 33%;
+margin: 0 auto;
+}
+hr{
+border-top: 1px solid #000000;
+width: 100%;
+margin: 5px 0;
+}
+.left-about-heading{
+width: 50%;
+float: right;
+line-height: 20px;
+clear: both;
+margin-bottom: 50px;
+}
+.right-about-heading{
+width: 50%;
+float: left;
+line-height: 20px;
+clear: both;
+margin-bottom: 50px;
+}
+.right-about-heading h2{
+text-align: right;
 }
 
+.right-about-heading p{
+text-align: right;
+}
+#circle-container{
+width: 300px;
+height: 300px;
+padding: 2x;
+border: solid #000000 1px;
+border-radius: 50%;
+margin: 0 auto;
+}
+#circle-cover-bg{
+background: url("../img/profile-img.jpeg") no-repeat cover cover;
+border-radius: 50%;
+}
+footer{
+height: 100px;
+}
+.social{
+text-align: center;
+}
+.social li{
+display: inline;
+}
+.social i{
+font-size: 120%;
+margin: 1%;
+padding: 5%;
+color:#000000;
+}
