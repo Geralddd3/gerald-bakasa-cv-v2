@@ -9,6 +9,7 @@ font-family: 'DM-Sans', 'Roboto';
 color: #000000;
 background-color:#edeced;
 }
+
 h2{
 font-family: Rubik;
 text-transform: uppercase;
@@ -120,9 +121,48 @@ border-radius: 50%;
 margin: 0 auto;
 }
 #circle-cover-bg{
-background: url("../img/profile-img.jpeg") no-repeat cover cover;
+background: url("../img/profile-img.jpeg") no-repeat center center;
 border-radius: 50%;
 }
+
+/*** education***/
+.education {
+height: 350px;
+width: 350px;
+overflow: hidden;
+position: relative;
+border: solid;
+margin-left: 5px;
+padding-top: 5px 25px;
+}
+.left-group {
+margin-left: 15px;
+padding-top: 5px 25px;
+}
+/*
+#edu-pic-1 {
+height: 600px;
+width: 400px;
+background: url("../img/edu-pic-1.jpeg") no-repeat center center;
+float: right;
+}
+*/
+
+/*** work history***/
+.work{
+height: 350px;
+width: 350px;
+overflow: hidden;
+position: relative;
+border: solid;
+margin-left: 5px;
+padding-top: 5px 25px;
+}
+
+
+
+/***footer***/
+
 footer{
 height: 100px;
 }
